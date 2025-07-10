@@ -38,6 +38,7 @@ export function CreateRoomForm() {
   async function handleCreateRooom(data: CreateRoomFormData) {
     try {
       await CreateRoom(data);
+      formRoom.reset(data);
     } catch {
       throw new Error("Deu erro!");
     }

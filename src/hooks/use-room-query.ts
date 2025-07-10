@@ -1,4 +1,4 @@
-import type { GetRoomsAPIResponse } from "@/types/room-response";
+import type { GetRoomsAPIResponse } from "@/types/get-room-response";
 import { useQuery } from "@tanstack/react-query";
 
 export function useQueryRoom() {
