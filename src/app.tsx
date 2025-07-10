@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./index.css";
-import { CreateRoom } from "./pages/create-room";
+import { CreateRoom } from "./pages/create-room/create-room";
 import { Room } from "./pages/room";
 import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
