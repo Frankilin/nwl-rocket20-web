@@ -3,13 +3,10 @@ import { Link, Navigate, useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { QuestionForm } from "../../question/create/form-question/question-form";
 import { QuestionList } from "@/pages/question/view/question-list";
-
-type RoomParams = {
-  roomId: string;
-};
+import type { RoomIdbase } from "@/types/room-base-id";
 
 export function Room() {
-  const params = useParams<RoomParams>();
+  const params = useParams<RoomIdbase>();
 
   if (!params.roomId) {
     return <Navigate replace to="/" />;

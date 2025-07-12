@@ -1,3 +1,3 @@
-export interface RoomIdbase {
+export type RoomIdbase = {
   roomId: string;
-}
+};
